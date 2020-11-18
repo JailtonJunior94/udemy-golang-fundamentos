@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var array1 [5]string
+	array1[0] = "Posição 1"
+	fmt.Println(array1)
+
+	array2 := [5]string{"Posição 1", "Posição 2", "Posição 3", "Posição 4", "Posição 2"}
+	fmt.Println(array2)
+
+	/* Fixa o valor de itens */
+	array3 := [...]int{1, 2, 3, 4, 6}
+	fmt.Println(array3)
+
+	/* Slices */
+	slice := []int{10, 11, 12, 13, 14, 15, 16}
+	fmt.Println(slice)
+
+	slice = append(slice, 17)
+	fmt.Println(slice)
+
+	/* Fatia, buscando as posições entre 1 e 3*/
+	slice2 := array2[1:3]
+	fmt.Println(slice2)
+
+	array2[1] = "Posição Alterada"
+	fmt.Println(slice2)
+}
