@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// auxiliar.Escrever()
 	// auxiliar.Escrever2()
@@ -7,5 +9,5 @@ func main() {
 	// err := checkmail.ValidateFormat("jailton.junior94@outlook.com")
 	// fmt.Println(err)
 
-	// fmt.Println("Escrevendo no pacote main")
+	fmt.Println("Escrevendo no pacote main")
 }
